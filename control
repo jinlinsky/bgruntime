@@ -1,0 +1,9 @@
+Package: com.jinlin.bgruntime
+Name: bgruntime
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: jinlin
+Author: jinlin
+Section: Tweaks
