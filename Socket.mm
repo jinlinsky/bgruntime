@@ -17,11 +17,17 @@ Socket Socket::gSharedSocket;
 
 int gSocketFD = -1;
 
+Socket::Socket()
+{
+	mState = CS_NOT_CONNECTED;
+	gSocketFD = socket(AF_INET, SOCK_STREAM, 0);
+}
+
 int 	Socket::Connect( const char* ip, int port, bool nonblock )
 {
 	int result = -1;
 	
-	if (mState = CS_NOT_CONNECTED)
+	if (mState == CS_NOT_CONNECTED)
 	{
 		mState = CS_CONNECTING;
 

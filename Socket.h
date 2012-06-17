@@ -12,11 +12,7 @@ public:
 		CS_CONNECTED
 	};
 
-	Socket()
-	{
-		mState = CS_NOT_CONNECTED;
-		gSocketFD = socket(AF_INET, SOCK_STREAM, 0);
-	}
+	Socket();
 
 	int     Connect         ( const char* ip, int port, bool nonblock );
 	void	Disconnect      ( void );

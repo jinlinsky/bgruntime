@@ -201,7 +201,7 @@ bool             gIsOpenedFile            = false;
 		}
 	}
 	
-	if (gTopApplication != nil && ![gTopApplication.bundleIdentifier isEqualToString: @"com.jinlin.qiyeanli"])
+	if (gTotalIdelTime != -1 && gTopApplication != nil && ![gTopApplication.bundleIdentifier isEqualToString: @"com.jinlin.qiyeanli"])
 	{	
 		int idleTime = FileBuffer::getAppIdleTime();
 		++idleTime;
